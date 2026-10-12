@@ -1,0 +1,77 @@
+# Konfigurasi proyek "Belajar Ekonometrika / Learning Econometrics" (dwibahasa)
+# Struktur: id/ = Bahasa Indonesia, en/ = English. Kedua folder memakai nama berkas yang sama
+# agar tombol bahasa dapat membuka halaman padanannya.
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - id/**/*.qmd
+    - en/**/*.qmd
+    - "!**/_*.qmd"
+  resources:
+    - assets/rv.js
+    - assets/vendor/qrcode.js
+    - assets/widgets/*.js
+
+website:
+  title: "Ekonometrika"
+  search:
+    location: navbar
+    type: overlay
+  page-navigation: true
+  reader-mode: true
+  navbar:
+    right:
+      - text: "Bahasa Indonesia"
+        href: id/index.qmd
+      - text: "English"
+        href: en/index.qmd
+  sidebar:
+    - id: id
+      title: "Belajar Ekonometrika"
+      style: docked
+      contents:
+        - id/index.qmd
+        - id/book/index.qmd
+        - section: "Bab 1. Regresi dan OLS"
+          href: id/book/ch01/index.qmd
+          contents:
+            - id/book/ch01/1-regression.qmd
+            - id/book/ch01/2-line.qmd
+            - id/book/ch01/3-error.qmd
+            - id/book/ch01/4-ols-idea.qmd
+            - id/book/ch01/5-ols-compute.qmd
+            - id/book/ch01/6-summary.qmd
+    - id: en
+      title: "Learning Econometrics"
+      style: docked
+      contents:
+        - en/index.qmd
+        - en/book/index.qmd
+        - section: "Chapter 1. Regression and OLS"
+          href: en/book/ch01/index.qmd
+          contents:
+            - en/book/ch01/1-regression.qmd
+            - en/book/ch01/2-line.qmd
+            - en/book/ch01/3-error.qmd
+            - en/book/ch01/4-ols-idea.qmd
+            - en/book/ch01/5-ols-compute.qmd
+            - en/book/ch01/6-summary.qmd
+
+bibliography: referensi.bib
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: assets/widget.css
+    toc: true
+    toc-depth: 3
+    smooth-scroll: true
+    link-external-newwindow: true
+    include-after-body: assets/lang-switch.html
+
+execute:
+  freeze: auto

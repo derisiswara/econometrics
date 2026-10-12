@@ -1,0 +1,39 @@
+---
+title: "1.6 Summary and exercise"
+---
+
+## Summary
+
+1. Regression studies how the **mean of Y** changes when X changes.
+2. A regression line has an **intercept** ($\beta_1$) and a **slope** ($\beta_2$).
+3. The regression line passes through the **mean of Y at each X**, not through every data point.
+4. The distance from a point to the line is the **error** (population) or the **residual** (sample).
+5. **OLS** chooses the line with the **smallest sum of squared residuals**, the bottom of the SSR curve.
+6. Formulas: $\hat\beta_2 = \sum x_i y_i / \sum x_i^2$ and $\hat\beta_1 = \bar Y - \hat\beta_2 \bar X$.
+
+## Exercise
+
+**Problem.** Study hours (X) and exam scores (Y) for four students: (1, 50), (2, 60), (3, 65), (4, 75). Compute $\hat\beta_1$ and $\hat\beta_2$, and interpret the slope.
+
+::: {.callout-tip collapse="true"}
+## Show answer
+
+$\bar X = 2.5$ and $\bar Y = 62.5$.
+
+| $x_i$ | $y_i$ | $x_i y_i$ | $x_i^2$ |
+|:-:|:-:|:-:|:-:|
+| −1.5 | −12.5 | 18.75 | 2.25 |
+| −0.5 | −2.5 | 1.25 | 0.25 |
+| 0.5 | 2.5 | 1.25 | 0.25 |
+| 1.5 | 12.5 | 18.75 | 2.25 |
+| | **Sum** | **40** | **5** |
+
+$\hat\beta_2 = 40/5 = 8$ and $\hat\beta_1 = 62.5 - 8 \times 2.5 = 42.5$, so $\hat Y = 42.5 + 8X$.
+
+Each additional hour of study is associated with an 8-point higher average exam score.
+:::
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

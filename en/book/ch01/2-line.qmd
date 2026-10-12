@@ -1,0 +1,36 @@
+---
+title: "1.2 The regression line"
+---
+
+<script src="../../../assets/vendor/qrcode.js"></script>
+<script src="../../../assets/rv.js"></script>
+<script src="../../../assets/widgets/ch01.js"></script>
+
+<div class="rv-mode"><button type="button" aria-pressed="false">Show print view (PDF)</button><span>Preview how the figures look when the page is printed or saved as PDF.</span></div>
+
+The relationship between X and Y is described by a straight line:
+
+$$
+Y = \beta_1 + \beta_2 X
+$$
+
+- $\beta_1$ (**intercept**): the value of Y when X = 0, where the line crosses the Y axis.
+- $\beta_2$ (**slope**): the change in Y when X rises by **one unit**.
+
+<div class="rv" id="rv-line">
+<div class="rv-title">Figure 1.4. Reading the intercept and the slope</div>
+<div class="rv-ctrl"><label>Intercept β₁ <input type="range" id="rv-line-b1" min="0" max="12" step="0.5" value="1"> <strong id="rv-line-b1v"></strong></label><label>Slope β₂ <input type="range" id="rv-line-b2" min="-1" max="1.5" step="0.1" value="0.6"> <strong id="rv-line-b2v"></strong></label></div>
+<svg class="rv-svg" viewBox="0 0 560 320" role="img" aria-label="A line with adjustable intercept and slope"></svg>
+<p class="rv-out" id="rv-line-out"></p>
+</div>
+
+## A line through the averages
+
+Households with the same income can consume different amounts. The regression line **does not pass through every point**; it passes through the **mean of Y at each value of X**, called the **conditional mean** and written $E(Y \mid X)$.
+
+<div class="rv" id="rv-cond">
+<div class="rv-title">Figure 1.5. The spread of Y at each X and the line of means</div>
+<div class="rv-ctrl"><button id="rv-cond-pt" class="on">Data points</button><button id="rv-cond-bell">Distribution curves</button><button id="rv-cond-both">Both</button><label><input type="checkbox" id="rv-cond-mean" checked> Means and regression line</label></div>
+<svg class="rv-svg" viewBox="0 0 560 330" role="img" aria-label="Conditional distribution of consumption at each income level"></svg>
+<p class="rv-out"></p>
+</div>

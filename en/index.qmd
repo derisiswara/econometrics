@@ -1,0 +1,21 @@
+---
+title: "Learning Econometrics"
+subtitle: "An interactive textbook for learning and teaching"
+toc: false
+---
+
+This interactive textbook is self-study reading with figures you can try directly in the browser, including on a phone. Each chapter is split into several short pages.
+
+[Open the textbook →](book/index.qmd)
+
+## Contents
+
+| Chapter | Topic | Status |
+|:-:|---|:-:|
+| 1 | [Two-variable regression and OLS](book/ch01/index.qmd) | Available |
+| 2 | Classical linear regression assumptions and properties of OLS | Planned |
+| 3 | The coefficient of determination ($R^2$) | Planned |
+| 4 | Inference: standard errors, confidence intervals, and t tests | Planned |
+| 5 | Multiple linear regression | Planned |
+
+*Baca situs ini dalam Bahasa Indonesia: gunakan tombol **Bahasa Indonesia** di bagian atas.*

@@ -1,0 +1,39 @@
+---
+title: "1.6 Ringkasan dan latihan"
+---
+
+## Ringkasan
+
+1. Regresi mempelajari bagaimana **rata-rata Y** berubah ketika X berubah.
+2. Garis regresi memiliki **intersep** ($\beta_1$) dan **kemiringan** ($\beta_2$).
+3. Garis regresi melewati **rata-rata Y pada setiap X**, bukan setiap titik data.
+4. Jarak titik ke garis disebut **galat** (populasi) atau **residual** (sampel).
+5. **OLS** memilih garis dengan **jumlah kuadrat residual terkecil**, yaitu dasar kurva SSR.
+6. Rumus: $\hat\beta_2 = \sum x_i y_i / \sum x_i^2$ dan $\hat\beta_1 = \bar Y - \hat\beta_2 \bar X$.
+
+## Latihan
+
+**Soal.** Data jam belajar (X) dan nilai ujian (Y) empat mahasiswa: (1, 50), (2, 60), (3, 65), (4, 75). Hitunglah $\hat\beta_1$ dan $\hat\beta_2$, lalu tafsirkan kemiringannya.
+
+::: {.callout-tip collapse="true"}
+## Lihat jawaban
+
+$\bar X = 2{,}5$ dan $\bar Y = 62{,}5$.
+
+| $x_i$ | $y_i$ | $x_i y_i$ | $x_i^2$ |
+|:-:|:-:|:-:|:-:|
+| −1,5 | −12,5 | 18,75 | 2,25 |
+| −0,5 | −2,5 | 1,25 | 0,25 |
+| 0,5 | 2,5 | 1,25 | 0,25 |
+| 1,5 | 12,5 | 18,75 | 2,25 |
+| | **Jumlah** | **40** | **5** |
+
+$\hat\beta_2 = 40/5 = 8$ dan $\hat\beta_1 = 62{,}5 - 8 \times 2{,}5 = 42{,}5$, sehingga $\hat Y = 42{,}5 + 8X$.
+
+Setiap tambahan satu jam belajar berhubungan dengan kenaikan nilai ujian rata-rata sebesar 8 poin.
+:::
+
+## Referensi {.unnumbered}
+
+::: {#refs}
+:::

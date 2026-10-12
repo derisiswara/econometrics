@@ -1,0 +1,685 @@
+[
+  {
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Learning Econometrics",
+    "section": "",
+    "text": "This interactive textbook is self-study reading with figures you can try directly in the browser, including on a phone. Each chapter is split into several short pages.\nOpen the textbook →",
+    "crumbs": [
+      "English",
+      "Learning Econometrics"
+    ]
+  },
+  {
+    "objectID": "en/index.html#contents",
+    "href": "en/index.html#contents",
+    "title": "Learning Econometrics",
+    "section": "Contents",
+    "text": "Contents\n\n\n\nChapter\nTopic\nStatus\n\n\n\n\n1\nTwo-variable regression and OLS\nAvailable\n\n\n2\nClassical linear regression assumptions and properties of OLS\nPlanned\n\n\n3\nThe coefficient of determination (\\(R^2\\))\nPlanned\n\n\n4\nInference: standard errors, confidence intervals, and t tests\nPlanned\n\n\n5\nMultiple linear regression\nPlanned\n\n\n\nBaca situs ini dalam Bahasa Indonesia: gunakan tombol Bahasa Indonesia di bagian atas.",
+    "crumbs": [
+      "English",
+      "Learning Econometrics"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/index.html",
+    "href": "en/book/ch01/index.html",
+    "title": "Chapter 1. Two-Variable Regression and OLS",
+    "section": "",
+    "text": "Learning objectives\n\n\n\nAfter working through this chapter, students should be able to:\n\nexplain what regression analysis does;\ninterpret the intercept and slope of a regression line;\nexplain the idea of OLS, that is, choosing the line with the smallest sum of squared errors;\ncompute simple regression coefficients by hand.",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/index.html#chapter-map",
+    "href": "en/book/ch01/index.html#chapter-map",
+    "title": "Chapter 1. Two-Variable Regression and OLS",
+    "section": "Chapter map",
+    "text": "Chapter map\nThis chapter is split into six short pages. Each page carries one idea and one to three figures.\n\n\n\nPage\nContents\n\n\n\n\n1.1 What is regression?\nScatter plots, patterns, association and causation\n\n\n1.2 The regression line\nIntercept, slope, and the conditional mean\n\n\n1.3 Errors, population, and sample\nWhy data do not lie on the line; estimates from a sample\n\n\n1.4 The idea of OLS\nResiduals and the least-squares rule\n\n\n1.5 Computing OLS\nFormulas, a worked example, and prediction\n\n\n1.6 Summary and exercise\nKey points and a practice problem\n\n\n\n\n\n\n\n\n\nSources and data\n\n\n\nThis chapter simplifies the opening chapters of standard econometrics textbooks, mainly Gujarati and Porter (2009) (Chapters 1 to 3), with Wooldridge (2020) (Chapter 2) for comparison. The text is a paraphrase, not a direct quotation; chapter numbers should be checked against the edition in use. All numbers are illustrative (hypothetical) data, expressed in millions of Indonesian rupiah (IDR).",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/5-ols-compute.html",
+    "href": "en/book/ch01/5-ols-compute.html",
+    "title": "1.5 Computing OLS",
+    "section": "",
+    "text": "Show print view (PDF)\n\nPreview how the figures look when the page is printed or saved as PDF.",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.5 Computing OLS"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/5-ols-compute.html#from-the-ssr-curve-to-the-formula",
+    "href": "en/book/ch01/5-ols-compute.html#from-the-ssr-curve-to-the-formula",
+    "title": "1.5 Computing OLS",
+    "section": "From the SSR curve to the formula",
+    "text": "From the SSR curve to the formula\nEvery choice of slope gives a different SSR; drawn together they form a U-shaped curve. The OLS line sits at the bottom of the curve, where the tangent is flat (derivative = 0).\n\n\nFigure 1.10. The U-shaped SSR curve\n\n\nSlope β̂₂  Go to the bottom\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSetting the derivative to zero gives two formulas:\n\\[\n\\hat\\beta_2 = \\frac{\\sum x_i y_i}{\\sum x_i^2}\n\\qquad\\qquad\n\\hat\\beta_1 = \\bar Y - \\hat\\beta_2 \\bar X\n\\]\nwhere \\(x_i = X_i - \\bar X\\) and \\(y_i = Y_i - \\bar Y\\) (deviations from the means).",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.5 Computing OLS"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/5-ols-compute.html#worked-example",
+    "href": "en/book/ch01/5-ols-compute.html#worked-example",
+    "title": "1.5 Computing OLS",
+    "section": "Worked example",
+    "text": "Worked example\nSix households (illustrative data, IDR million per month). Press Next to follow each step.\n\n\nFigure 1.11. Computing OLS step by step\n\n\n\nPrevious\n\n\nNext\n\n\n\n\n\n\n\n\n\n\n\nHousehold\n\\(X_i\\)\n\\(Y_i\\)\n\\(x_i\\)\n\\(y_i\\)\n\\(x_i y_i\\)\n\\(x_i^2\\)\n\n\n\n\n1\n2\n3\n−5\n−4.5\n22.5\n25\n\n\n2\n4\n4\n−3\n−3.5\n10.5\n9\n\n\n3\n6\n7\n−1\n−0.5\n0.5\n1\n\n\n4\n8\n8\n1\n0.5\n0.5\n1\n\n\n5\n10\n11\n3\n3.5\n10.5\n9\n\n\n6\n12\n12\n5\n4.5\n22.5\n25\n\n\nSum\n42\n45\n\n\n67\n70\n\n\n\n\\[\n\\hat\\beta_2 = \\frac{67}{70} \\approx 0.957\n\\qquad\n\\hat\\beta_1 = 7.5 - 0.957 \\times 7 = 0.8\n\\qquad\n\\hat Y = 0.8 + 0.957X\n\\]",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.5 Computing OLS"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/5-ols-compute.html#reading-the-result",
+    "href": "en/book/ch01/5-ols-compute.html#reading-the-result",
+    "title": "1.5 Computing OLS",
+    "section": "Reading the result",
+    "text": "Reading the result\n\nSlope 0.957: each additional IDR 1 million of income is associated with about IDR 0.957 million more average consumption (the marginal propensity to consume, MPC).\nIntercept 0.8: predicted consumption at zero income; interpret with care, since no household in the data has zero income.\n\n\n\nFigure 1.12. Predicting with the estimated line\n\n\nIncome X",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.5 Computing OLS"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/3-error.html",
+    "href": "en/book/ch01/3-error.html",
+    "title": "1.3 Errors, population, and sample",
+    "section": "",
+    "text": "Show print view (PDF)\n\nPreview how the figures look when the page is printed or saved as PDF.",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.3 Errors, population, and sample"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/3-error.html#the-error-term",
+    "href": "en/book/ch01/3-error.html#the-error-term",
+    "title": "1.3 Errors, population, and sample",
+    "section": "The error term",
+    "text": "The error term\nEach point lies some distance from the line. The regression model writes this distance as the error term, \\(u_i\\):\n\\[\nY_i = \\underbrace{\\beta_1 + \\beta_2 X_i}_{\\text{value on the line}} + \\underbrace{u_i}_{\\text{error}}\n\\]\nThe error collects every factor other than X that also affects Y, such as household size or habits.\n\n\nFigure 1.6. Click a point to see its error",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.3 Errors, population, and sample"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/3-error.html#population-and-sample",
+    "href": "en/book/ch01/3-error.html#population-and-sample",
+    "title": "1.3 Errors, population, and sample",
+    "section": "Population and sample",
+    "text": "Population and sample\nThe true line applies to the whole population and is unknown. From a sample we can only estimate it. Estimates carry a hat ( ^ ).\n\n\n\n\n\n\n\nPopulation (unknown)\nSample (computed from data)\n\n\n\n\n\\(\\beta_1, \\beta_2\\)\n\\(\\hat\\beta_1, \\hat\\beta_2\\) (estimates)\n\n\ntrue line\nestimated line \\(\\hat Y_i = \\hat\\beta_1 + \\hat\\beta_2 X_i\\)\n\n\nerror \\(u_i\\)\nresidual \\(\\hat u_i = Y_i - \\hat Y_i\\)\n\n\n\n\n\nFigure 1.7. One population, many samples, many estimated lines\n\n\n\nDraw 1 sample\n\n\nDraw 20 samples\n\n\nStart over\n\n\n\n\n\n\n\nThe estimated lines scatter around the population line. The question is: from a single sample, how do we draw the best estimated line?",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.3 Errors, population, and sample"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/1-regression.html",
+    "href": "en/book/ch01/1-regression.html",
+    "title": "1.1 What is regression?",
+    "section": "",
+    "text": "Show print view (PDF)\n\nPreview how the figures look when the page is printed or saved as PDF.\nConsider this question: if a household’s income rises, by how much does its consumption rise?\nTo answer it, we collect data on many households and draw them in a scatter plot. Each point represents one household.\nRegression studies how the average value of one variable (Y) changes when another variable (X) changes. The result is summarised by a line.",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.1 What is regression?"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/1-regression.html#three-patterns",
+    "href": "en/book/ch01/1-regression.html#three-patterns",
+    "title": "1.1 What is regression?",
+    "section": "Three patterns",
+    "text": "Three patterns\n\n\nFigure 1.2. Positive, negative, and no relationship\n\n\n\n\n\n\nPositiveX rises, Y tends to rise\n\n\n\n\n\n\nNegativeX rises, Y tends to fall\n\n\n\n\n\n\nNo relationshipthe line is nearly flat\n\n\n\n\nExamples: income and consumption (positive); price and quantity demanded (negative); shoe size and exam score (no relationship).",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.1 What is regression?"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/1-regression.html#association-is-not-causation",
+    "href": "en/book/ch01/1-regression.html#association-is-not-causation",
+    "title": "1.1 What is regression?",
+    "section": "Association is not causation",
+    "text": "Association is not causation\nIce-cream sales and drowning cases both rise in summer. They are associated, but ice cream does not cause drowning; both are driven by a third factor, hot weather.\n\n\nFigure 1.3. A hidden third factor\n\n\n  Hot weather  Ice-cream sales  Drowning cases   affects affects  associated, not causal\n\n\nRegression shows association. A causal claim needs theory and an appropriate research design.",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.1 What is regression?"
+    ]
+  },
+  {
+    "objectID": "id/book/index.html",
+    "href": "id/book/index.html",
+    "title": "Pengantar Buku Teks",
+    "section": "",
+    "text": "Buku teks ini ditujukan bagi mahasiswa yang baru mengenal ekonometrika (setara Ekonometrika 1). Pembaca cukup memahami statistika dasar: rata-rata, varians, dan notasi penjumlahan \\(\\sum\\).",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Pengantar Buku Teks"
+    ]
+  },
+  {
+    "objectID": "id/book/index.html#untuk-siapa-buku-ini",
+    "href": "id/book/index.html#untuk-siapa-buku-ini",
+    "title": "Pengantar Buku Teks",
+    "section": "",
+    "text": "Buku teks ini ditujukan bagi mahasiswa yang baru mengenal ekonometrika (setara Ekonometrika 1). Pembaca cukup memahami statistika dasar: rata-rata, varians, dan notasi penjumlahan \\(\\sum\\).",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Pengantar Buku Teks"
+    ]
+  },
+  {
+    "objectID": "id/book/index.html#cara-memakai-ilustrasi",
+    "href": "id/book/index.html#cara-memakai-ilustrasi",
+    "title": "Pengantar Buku Teks",
+    "section": "Cara memakai ilustrasi",
+    "text": "Cara memakai ilustrasi\nSetiap halaman memuat ilustrasi interaktif dalam kotak bertepi: geser slider, tekan tombol, atau klik titik pada grafik. Ilustrasi berjalan di komputer maupun ponsel dan mengikuti mode terang atau gelap.",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Pengantar Buku Teks"
+    ]
+  },
+  {
+    "objectID": "id/book/index.html#versi-cetak-dan-pdf",
+    "href": "id/book/index.html#versi-cetak-dan-pdf",
+    "title": "Pengantar Buku Teks",
+    "section": "Versi cetak dan PDF",
+    "text": "Versi cetak dan PDF\nSetiap ilustrasi interaktif memiliki versi statis yang tampil saat halaman dicetak atau disimpan sebagai PDF, lengkap dengan pesan inti dan tautan (serta kode QR bila situs sudah terbit) ke versi interaktifnya. Gunakan tombol Lihat tampilan cetak (PDF) untuk pratinjau, lalu menu cetak peramban dan Simpan sebagai PDF (sebaiknya dalam mode terang).",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Pengantar Buku Teks"
+    ]
+  },
+  {
+    "objectID": "id/book/index.html#notasi-dan-istilah",
+    "href": "id/book/index.html#notasi-dan-istilah",
+    "title": "Pengantar Buku Teks",
+    "section": "Notasi dan istilah",
+    "text": "Notasi dan istilah\n\n\n\n\n\n\n\n\nNotasi\nArti\nIstilah Inggris\n\n\n\n\n\\(Y\\), \\(X\\)\nvariabel dependen dan independen\ndependent and independent variable\n\n\n\\(\\beta_1\\), \\(\\beta_2\\)\nintersep dan kemiringan populasi\nintercept, slope\n\n\n\\(\\hat\\beta_1\\), \\(\\hat\\beta_2\\)\ntaksiran dari sampel\nestimates\n\n\n\\(u_i\\)\ngalat\nerror term, disturbance\n\n\n\\(\\hat u_i\\)\nresidual\nresidual\n\n\n\\(E(Y \\mid X)\\)\nrata-rata bersyarat\nconditional mean\n\n\nSSR\njumlah kuadrat residual\nsum of squared residuals\n\n\n\nAngka desimal ditulis dengan koma (0,957). Notasi mengikuti Gujarati dan Porter (2009).",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Pengantar Buku Teks"
+    ]
+  },
+  {
+    "objectID": "id/book/index.html#daftar-bab",
+    "href": "id/book/index.html#daftar-bab",
+    "title": "Pengantar Buku Teks",
+    "section": "Daftar bab",
+    "text": "Daftar bab\n\nRegresi dua variabel dan OLS",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Pengantar Buku Teks"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/6-summary.html",
+    "href": "id/book/ch01/6-summary.html",
+    "title": "1.6 Ringkasan dan latihan",
+    "section": "",
+    "text": "Regresi mempelajari bagaimana rata-rata Y berubah ketika X berubah.\nGaris regresi memiliki intersep (\\(\\beta_1\\)) dan kemiringan (\\(\\beta_2\\)).\nGaris regresi melewati rata-rata Y pada setiap X, bukan setiap titik data.\nJarak titik ke garis disebut galat (populasi) atau residual (sampel).\nOLS memilih garis dengan jumlah kuadrat residual terkecil, yaitu dasar kurva SSR.\nRumus: \\(\\hat\\beta_2 = \\sum x_i y_i / \\sum x_i^2\\) dan \\(\\hat\\beta_1 = \\bar Y - \\hat\\beta_2 \\bar X\\).",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.6 Ringkasan dan latihan"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/6-summary.html#ringkasan",
+    "href": "id/book/ch01/6-summary.html#ringkasan",
+    "title": "1.6 Ringkasan dan latihan",
+    "section": "",
+    "text": "Regresi mempelajari bagaimana rata-rata Y berubah ketika X berubah.\nGaris regresi memiliki intersep (\\(\\beta_1\\)) dan kemiringan (\\(\\beta_2\\)).\nGaris regresi melewati rata-rata Y pada setiap X, bukan setiap titik data.\nJarak titik ke garis disebut galat (populasi) atau residual (sampel).\nOLS memilih garis dengan jumlah kuadrat residual terkecil, yaitu dasar kurva SSR.\nRumus: \\(\\hat\\beta_2 = \\sum x_i y_i / \\sum x_i^2\\) dan \\(\\hat\\beta_1 = \\bar Y - \\hat\\beta_2 \\bar X\\).",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.6 Ringkasan dan latihan"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/6-summary.html#latihan",
+    "href": "id/book/ch01/6-summary.html#latihan",
+    "title": "1.6 Ringkasan dan latihan",
+    "section": "Latihan",
+    "text": "Latihan\nSoal. Data jam belajar (X) dan nilai ujian (Y) empat mahasiswa: (1, 50), (2, 60), (3, 65), (4, 75). Hitunglah \\(\\hat\\beta_1\\) dan \\(\\hat\\beta_2\\), lalu tafsirkan kemiringannya.\n\n\n\n\n\n\nLihat jawaban\n\n\n\n\n\n\\(\\bar X = 2{,}5\\) dan \\(\\bar Y = 62{,}5\\).\n\n\n\n\\(x_i\\)\n\\(y_i\\)\n\\(x_i y_i\\)\n\\(x_i^2\\)\n\n\n\n\n−1,5\n−12,5\n18,75\n2,25\n\n\n−0,5\n−2,5\n1,25\n0,25\n\n\n0,5\n2,5\n1,25\n0,25\n\n\n1,5\n12,5\n18,75\n2,25\n\n\n\nJumlah\n40\n5\n\n\n\n\\(\\hat\\beta_2 = 40/5 = 8\\) dan \\(\\hat\\beta_1 = 62{,}5 - 8 \\times 2{,}5 = 42{,}5\\), sehingga \\(\\hat Y = 42{,}5 + 8X\\).\nSetiap tambahan satu jam belajar berhubungan dengan kenaikan nilai ujian rata-rata sebesar 8 poin.",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.6 Ringkasan dan latihan"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/6-summary.html#referensi",
+    "href": "id/book/ch01/6-summary.html#referensi",
+    "title": "1.6 Ringkasan dan latihan",
+    "section": "Referensi",
+    "text": "Referensi",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.6 Ringkasan dan latihan"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/4-ols-idea.html",
+    "href": "id/book/ch01/4-ols-idea.html",
+    "title": "1.4 Gagasan OLS",
+    "section": "",
+    "text": "Lihat tampilan cetak (PDF)\n\nPratinjau tampilan ilustrasi saat dicetak atau disimpan sebagai PDF.\nResidual adalah jarak vertikal antara titik data dan garis taksiran, \\(\\hat u_i = Y_i - \\hat Y_i\\). Garis yang baik memiliki residual yang kecil.",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.4 Gagasan OLS"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/4-ols-idea.html#mengapa-residual-dikuadratkan",
+    "href": "id/book/ch01/4-ols-idea.html#mengapa-residual-dikuadratkan",
+    "title": "1.4 Gagasan OLS",
+    "section": "Mengapa residual dikuadratkan?",
+    "text": "Mengapa residual dikuadratkan?\nJumlah residual tidak dapat dipakai sebagai ukuran, karena residual positif dan negatif saling meniadakan. Kedua garis berikut sama-sama memiliki jumlah residual nol, padahal Garis B jelas lebih buruk.\n\n\nIlustrasi 1.8. Jumlah residual sama-sama nol, kualitas garis berbeda jauh",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.4 Gagasan OLS"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/4-ols-idea.html#aturan-ols",
+    "href": "id/book/ch01/4-ols-idea.html#aturan-ols",
+    "title": "1.4 Gagasan OLS",
+    "section": "Aturan OLS",
+    "text": "Aturan OLS\nOLS (Ordinary Least Squares, kuadrat terkecil biasa) memilih garis yang membuat jumlah kuadrat residual (SSR) sekecil mungkin:\n\\[\n\\text{SSR} = \\sum \\hat u_i^2 \\;\\longrightarrow\\; \\text{sekecil mungkin}\n\\]\n\n\nIlustrasi 1.9. Tantangan: temukan garis dengan SSR terkecil\n\n\nIntersep β̂₁  Kemiringan β̂₂  \n\n\n\nTunjukkan garis OLS\n\n\nMulai lagi\n\n Tampilkan kotak kuadrat",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.4 Gagasan OLS"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/2-line.html",
+    "href": "id/book/ch01/2-line.html",
+    "title": "1.2 Garis regresi",
+    "section": "",
+    "text": "Lihat tampilan cetak (PDF)\n\nPratinjau tampilan ilustrasi saat dicetak atau disimpan sebagai PDF.\nHubungan antara X dan Y digambarkan dengan sebuah garis lurus:\n\\[\nY = \\beta_1 + \\beta_2 X\n\\]",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.2 Garis regresi"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/2-line.html#garis-yang-menghubungkan-rata-rata",
+    "href": "id/book/ch01/2-line.html#garis-yang-menghubungkan-rata-rata",
+    "title": "1.2 Garis regresi",
+    "section": "Garis yang menghubungkan rata-rata",
+    "text": "Garis yang menghubungkan rata-rata\nKeluarga dengan pendapatan yang sama dapat memiliki konsumsi yang berbeda. Garis regresi tidak melewati setiap titik; garis itu melewati rata-rata Y pada setiap nilai X, yang disebut rata-rata bersyarat dan ditulis \\(E(Y \\mid X)\\).\n\n\nIlustrasi 1.5. Sebaran Y pada setiap X dan garis rata-ratanya\n\n\n\nTitik data\n\n\nKurva distribusi\n\n\nKeduanya\n\n Rata-rata dan garis regresi",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.2 Garis regresi"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Belajar Ekonometrika · Learning Econometrics",
+    "section": "",
+    "text": "Bahasa Indonesia\nBuku teks interaktif untuk belajar dan mengajar ekonometrika.\nMasuk →\n\n\nEnglish\nAn interactive textbook for learning and teaching econometrics.\nEnter →"
+  },
+  {
+    "objectID": "id/book/ch01/1-regression.html",
+    "href": "id/book/ch01/1-regression.html",
+    "title": "1.1 Apa itu regresi?",
+    "section": "",
+    "text": "Lihat tampilan cetak (PDF)\n\nPratinjau tampilan ilustrasi saat dicetak atau disimpan sebagai PDF.\nPerhatikan pertanyaan berikut: jika pendapatan sebuah keluarga naik, berapa besar kenaikan konsumsinya?\nUntuk menjawabnya, kita mengumpulkan data dari banyak keluarga, lalu menggambarkannya dalam diagram pencar (scatter plot). Setiap titik mewakili satu keluarga.\nRegresi mempelajari bagaimana nilai rata-rata suatu variabel (Y) berubah ketika variabel lain (X) berubah. Hasilnya dirangkum dalam sebuah garis.",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.1 Apa itu regresi?"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/1-regression.html#tiga-pola-hubungan",
+    "href": "id/book/ch01/1-regression.html#tiga-pola-hubungan",
+    "title": "1.1 Apa itu regresi?",
+    "section": "Tiga pola hubungan",
+    "text": "Tiga pola hubungan\n\n\nIlustrasi 1.2. Positif, negatif, dan tanpa hubungan\n\n\n\n\n\n\nPositifX naik, Y cenderung naik\n\n\n\n\n\n\nNegatifX naik, Y cenderung turun\n\n\n\n\n\n\nTidak ada hubungangaris hampir datar\n\n\n\n\nContoh: pendapatan dan konsumsi (positif); harga dan jumlah barang yang diminta (negatif); nomor sepatu dan nilai ujian (tidak ada hubungan).",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.1 Apa itu regresi?"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/1-regression.html#hubungan-belum-tentu-sebab-akibat",
+    "href": "id/book/ch01/1-regression.html#hubungan-belum-tentu-sebab-akibat",
+    "title": "1.1 Apa itu regresi?",
+    "section": "Hubungan belum tentu sebab-akibat",
+    "text": "Hubungan belum tentu sebab-akibat\nPenjualan es krim dan kasus tenggelam sama-sama naik pada musim panas. Keduanya berhubungan, tetapi es krim tidak menyebabkan orang tenggelam; keduanya dipengaruhi faktor ketiga, yaitu cuaca panas.\n\n\nIlustrasi 1.3. Faktor ketiga yang tersembunyi\n\n\n  Cuaca panas  Penjualan es krim  Kasus tenggelam   memengaruhi memengaruhi  berhubungan, bukan sebab-akibat\n\n\nRegresi menunjukkan hubungan. Klaim sebab-akibat memerlukan dasar teori dan desain penelitian yang tepat.",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.1 Apa itu regresi?"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/3-error.html",
+    "href": "id/book/ch01/3-error.html",
+    "title": "1.3 Galat, populasi, dan sampel",
+    "section": "",
+    "text": "Lihat tampilan cetak (PDF)\n\nPratinjau tampilan ilustrasi saat dicetak atau disimpan sebagai PDF.",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.3 Galat, populasi, dan sampel"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/3-error.html#galat",
+    "href": "id/book/ch01/3-error.html#galat",
+    "title": "1.3 Galat, populasi, dan sampel",
+    "section": "Galat",
+    "text": "Galat\nSetiap titik memiliki jarak terhadap garis. Model regresi menuliskan jarak ini sebagai galat (error term), \\(u_i\\):\n\\[\nY_i = \\underbrace{\\beta_1 + \\beta_2 X_i}_{\\text{nilai pada garis}} + \\underbrace{u_i}_{\\text{galat}}\n\\]\nGalat menampung semua faktor lain di luar X yang ikut memengaruhi Y, misalnya jumlah anggota keluarga atau kebiasaan.\n\n\nIlustrasi 1.6. Klik salah satu titik untuk melihat galatnya",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.3 Galat, populasi, dan sampel"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/3-error.html#populasi-dan-sampel",
+    "href": "id/book/ch01/3-error.html#populasi-dan-sampel",
+    "title": "1.3 Galat, populasi, dan sampel",
+    "section": "Populasi dan sampel",
+    "text": "Populasi dan sampel\nGaris yang sebenarnya berlaku untuk seluruh populasi dan tidak kita ketahui. Dari sampel, kita hanya dapat menaksirnya. Hasil taksiran diberi tanda topi ( ^ ).\n\n\n\n\n\n\n\nPopulasi (tidak diketahui)\nSampel (dihitung dari data)\n\n\n\n\n\\(\\beta_1, \\beta_2\\)\n\\(\\hat\\beta_1, \\hat\\beta_2\\) (taksiran)\n\n\ngaris sebenarnya\ngaris taksiran \\(\\hat Y_i = \\hat\\beta_1 + \\hat\\beta_2 X_i\\)\n\n\ngalat \\(u_i\\)\nresidual \\(\\hat u_i = Y_i - \\hat Y_i\\)\n\n\n\n\n\nIlustrasi 1.7. Satu populasi, banyak sampel, banyak garis taksiran\n\n\n\nAmbil 1 sampel\n\n\nAmbil 20 sampel\n\n\nUlangi\n\n\n\n\n\n\n\nGaris-garis taksiran menyebar di sekitar garis populasi. Pertanyaannya: dari satu sampel, bagaimana menarik garis taksiran yang terbaik?",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.3 Galat, populasi, dan sampel"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/5-ols-compute.html",
+    "href": "id/book/ch01/5-ols-compute.html",
+    "title": "1.5 Menghitung OLS",
+    "section": "",
+    "text": "Lihat tampilan cetak (PDF)\n\nPratinjau tampilan ilustrasi saat dicetak atau disimpan sebagai PDF.",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.5 Menghitung OLS"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/5-ols-compute.html#dari-kurva-ssr-ke-rumus",
+    "href": "id/book/ch01/5-ols-compute.html#dari-kurva-ssr-ke-rumus",
+    "title": "1.5 Menghitung OLS",
+    "section": "Dari kurva SSR ke rumus",
+    "text": "Dari kurva SSR ke rumus\nSetiap pilihan kemiringan menghasilkan SSR yang berbeda; jika semuanya digambar, terbentuk kurva berbentuk U. Garis OLS berada di dasar kurva, tempat garis singgungnya datar (turunan = 0).\n\n\nIlustrasi 1.10. Kurva SSR berbentuk U\n\n\nKemiringan β̂₂  Ke dasar kurva\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLangkah “turunan sama dengan nol” menghasilkan dua rumus:\n\\[\n\\hat\\beta_2 = \\frac{\\sum x_i y_i}{\\sum x_i^2}\n\\qquad\\qquad\n\\hat\\beta_1 = \\bar Y - \\hat\\beta_2 \\bar X\n\\]\ndengan \\(x_i = X_i - \\bar X\\) dan \\(y_i = Y_i - \\bar Y\\) (selisih terhadap rata-rata).",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.5 Menghitung OLS"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/5-ols-compute.html#contoh-perhitungan",
+    "href": "id/book/ch01/5-ols-compute.html#contoh-perhitungan",
+    "title": "1.5 Menghitung OLS",
+    "section": "Contoh perhitungan",
+    "text": "Contoh perhitungan\nEnam keluarga (data contoh, juta rupiah per bulan). Tekan Berikutnya untuk mengikuti setiap langkah.\n\n\nIlustrasi 1.11. Menghitung OLS secara bertahap\n\n\n\nSebelumnya\n\n\nBerikutnya\n\n\n\n\n\n\n\n\n\n\n\nKeluarga\n\\(X_i\\)\n\\(Y_i\\)\n\\(x_i\\)\n\\(y_i\\)\n\\(x_i y_i\\)\n\\(x_i^2\\)\n\n\n\n\n1\n2\n3\n−5\n−4,5\n22,5\n25\n\n\n2\n4\n4\n−3\n−3,5\n10,5\n9\n\n\n3\n6\n7\n−1\n−0,5\n0,5\n1\n\n\n4\n8\n8\n1\n0,5\n0,5\n1\n\n\n5\n10\n11\n3\n3,5\n10,5\n9\n\n\n6\n12\n12\n5\n4,5\n22,5\n25\n\n\nJumlah\n42\n45\n\n\n67\n70\n\n\n\n\\[\n\\hat\\beta_2 = \\frac{67}{70} \\approx 0{,}957\n\\qquad\n\\hat\\beta_1 = 7{,}5 - 0{,}957 \\times 7 = 0{,}8\n\\qquad\n\\hat Y = 0{,}8 + 0{,}957X\n\\]",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.5 Menghitung OLS"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/5-ols-compute.html#membaca-hasilnya",
+    "href": "id/book/ch01/5-ols-compute.html#membaca-hasilnya",
+    "title": "1.5 Menghitung OLS",
+    "section": "Membaca hasilnya",
+    "text": "Membaca hasilnya\n\nKemiringan 0,957: setiap kenaikan pendapatan 1 juta rupiah berhubungan dengan kenaikan konsumsi rata-rata sekitar 0,957 juta rupiah (kecenderungan mengonsumsi marginal, MPC).\nIntersep 0,8: perkiraan konsumsi saat pendapatan nol; tafsirkan dengan hati-hati karena tidak ada data berpendapatan nol.\n\n\n\nIlustrasi 1.12. Prediksi dengan garis taksiran\n\n\nPendapatan X",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS",
+      "1.5 Menghitung OLS"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/index.html",
+    "href": "id/book/ch01/index.html",
+    "title": "Bab 1. Regresi Dua Variabel dan OLS",
+    "section": "",
+    "text": "Tujuan belajar\n\n\n\nSetelah mempelajari bab ini, mahasiswa diharapkan mampu:\n\nmenjelaskan apa yang dikerjakan oleh analisis regresi;\nmembaca arti intersep dan kemiringan pada sebuah garis regresi;\nmenjelaskan gagasan OLS, yaitu memilih garis dengan kesalahan kuadrat terkecil;\nmenghitung koefisien regresi sederhana secara manual.",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS"
+    ]
+  },
+  {
+    "objectID": "id/book/ch01/index.html#peta-bab",
+    "href": "id/book/ch01/index.html#peta-bab",
+    "title": "Bab 1. Regresi Dua Variabel dan OLS",
+    "section": "Peta bab",
+    "text": "Peta bab\nBab ini dibagi menjadi enam halaman pendek. Setiap halaman memuat satu gagasan dan satu sampai tiga ilustrasi.\n\n\n\nHalaman\nIsi\n\n\n\n\n1.1 Apa itu regresi?\nDiagram pencar, pola hubungan, hubungan dan sebab-akibat\n\n\n1.2 Garis regresi\nIntersep, kemiringan, dan rata-rata bersyarat\n\n\n1.3 Galat, populasi, dan sampel\nMengapa data tidak tepat di garis; taksiran dari sampel\n\n\n1.4 Gagasan OLS\nResidual dan aturan kuadrat terkecil\n\n\n1.5 Menghitung OLS\nRumus, contoh hitung, dan prediksi\n\n\n1.6 Ringkasan dan latihan\nRangkuman dan soal latihan\n\n\n\n\n\n\n\n\n\nSumber dan data\n\n\n\nBab ini menyederhanakan bagian awal buku teks ekonometrika standar, terutama Gujarati dan Porter (2009) (Bab 1 sampai 3), dengan Wooldridge (2020) (Bab 2) sebagai pembanding. Isinya merupakan parafrase, bukan kutipan langsung; nomor bab perlu dicocokkan dengan edisi yang digunakan. Semua angka adalah data contoh (hipotetis).",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Bab 1. Regresi dan OLS"
+    ]
+  },
+  {
+    "objectID": "id/index.html",
+    "href": "id/index.html",
+    "title": "Belajar Ekonometrika",
+    "section": "",
+    "text": "Buku teks interaktif ini merupakan bacaan mandiri dengan ilustrasi yang dapat dicoba langsung di peramban, termasuk di ponsel. Setiap bab dipecah menjadi beberapa halaman pendek.\nBuka buku teks →",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Belajar Ekonometrika"
+    ]
+  },
+  {
+    "objectID": "id/index.html#daftar-materi",
+    "href": "id/index.html#daftar-materi",
+    "title": "Belajar Ekonometrika",
+    "section": "Daftar materi",
+    "text": "Daftar materi\n\n\n\nBab\nTopik\nStatus\n\n\n\n\n1\nRegresi dua variabel dan OLS\nTersedia\n\n\n2\nAsumsi model regresi linear klasik dan sifat estimator OLS\nRencana\n\n\n3\nKoefisien determinasi (\\(R^2\\))\nRencana\n\n\n4\nInferensi: galat baku, selang kepercayaan, dan uji t\nRencana\n\n\n5\nRegresi linear berganda\nRencana\n\n\n\nRead this site in English: use the English button at the top.",
+    "crumbs": [
+      "Bahasa Indonesia",
+      "Belajar Ekonometrika"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/2-line.html",
+    "href": "en/book/ch01/2-line.html",
+    "title": "1.2 The regression line",
+    "section": "",
+    "text": "Show print view (PDF)\n\nPreview how the figures look when the page is printed or saved as PDF.\nThe relationship between X and Y is described by a straight line:\n\\[\nY = \\beta_1 + \\beta_2 X\n\\]",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.2 The regression line"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/2-line.html#a-line-through-the-averages",
+    "href": "en/book/ch01/2-line.html#a-line-through-the-averages",
+    "title": "1.2 The regression line",
+    "section": "A line through the averages",
+    "text": "A line through the averages\nHouseholds with the same income can consume different amounts. The regression line does not pass through every point; it passes through the mean of Y at each value of X, called the conditional mean and written \\(E(Y \\mid X)\\).\n\n\nFigure 1.5. The spread of Y at each X and the line of means\n\n\n\nData points\n\n\nDistribution curves\n\n\nBoth\n\n Means and regression line",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.2 The regression line"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/4-ols-idea.html",
+    "href": "en/book/ch01/4-ols-idea.html",
+    "title": "1.4 The idea of OLS",
+    "section": "",
+    "text": "Show print view (PDF)\n\nPreview how the figures look when the page is printed or saved as PDF.\nA residual is the vertical distance between a data point and the estimated line, \\(\\hat u_i = Y_i - \\hat Y_i\\). A good line has small residuals.",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.4 The idea of OLS"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/4-ols-idea.html#why-square-the-residuals",
+    "href": "en/book/ch01/4-ols-idea.html#why-square-the-residuals",
+    "title": "1.4 The idea of OLS",
+    "section": "Why square the residuals?",
+    "text": "Why square the residuals?\nThe plain sum of residuals is not a useful measure, because positive and negative residuals cancel out. Both lines below have a residual sum of zero, yet Line B is clearly worse.\n\n\nFigure 1.8. Both residual sums are zero, but the lines differ greatly",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.4 The idea of OLS"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/4-ols-idea.html#the-ols-rule",
+    "href": "en/book/ch01/4-ols-idea.html#the-ols-rule",
+    "title": "1.4 The idea of OLS",
+    "section": "The OLS rule",
+    "text": "The OLS rule\nOLS (Ordinary Least Squares) chooses the line that makes the sum of squared residuals (SSR) as small as possible:\n\\[\n\\text{SSR} = \\sum \\hat u_i^2 \\;\\longrightarrow\\; \\text{as small as possible}\n\\]\n\n\nFigure 1.9. Challenge: find the line with the smallest SSR\n\n\nIntercept β̂₁  Slope β̂₂  \n\n\n\nShow the OLS line\n\n\nStart over\n\n Show squares",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.4 The idea of OLS"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/6-summary.html",
+    "href": "en/book/ch01/6-summary.html",
+    "title": "1.6 Summary and exercise",
+    "section": "",
+    "text": "Regression studies how the mean of Y changes when X changes.\nA regression line has an intercept (\\(\\beta_1\\)) and a slope (\\(\\beta_2\\)).\nThe regression line passes through the mean of Y at each X, not through every data point.\nThe distance from a point to the line is the error (population) or the residual (sample).\nOLS chooses the line with the smallest sum of squared residuals, the bottom of the SSR curve.\nFormulas: \\(\\hat\\beta_2 = \\sum x_i y_i / \\sum x_i^2\\) and \\(\\hat\\beta_1 = \\bar Y - \\hat\\beta_2 \\bar X\\).",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.6 Summary and exercise"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/6-summary.html#summary",
+    "href": "en/book/ch01/6-summary.html#summary",
+    "title": "1.6 Summary and exercise",
+    "section": "",
+    "text": "Regression studies how the mean of Y changes when X changes.\nA regression line has an intercept (\\(\\beta_1\\)) and a slope (\\(\\beta_2\\)).\nThe regression line passes through the mean of Y at each X, not through every data point.\nThe distance from a point to the line is the error (population) or the residual (sample).\nOLS chooses the line with the smallest sum of squared residuals, the bottom of the SSR curve.\nFormulas: \\(\\hat\\beta_2 = \\sum x_i y_i / \\sum x_i^2\\) and \\(\\hat\\beta_1 = \\bar Y - \\hat\\beta_2 \\bar X\\).",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.6 Summary and exercise"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/6-summary.html#exercise",
+    "href": "en/book/ch01/6-summary.html#exercise",
+    "title": "1.6 Summary and exercise",
+    "section": "Exercise",
+    "text": "Exercise\nProblem. Study hours (X) and exam scores (Y) for four students: (1, 50), (2, 60), (3, 65), (4, 75). Compute \\(\\hat\\beta_1\\) and \\(\\hat\\beta_2\\), and interpret the slope.\n\n\n\n\n\n\nShow answer\n\n\n\n\n\n\\(\\bar X = 2.5\\) and \\(\\bar Y = 62.5\\).\n\n\n\n\\(x_i\\)\n\\(y_i\\)\n\\(x_i y_i\\)\n\\(x_i^2\\)\n\n\n\n\n−1.5\n−12.5\n18.75\n2.25\n\n\n−0.5\n−2.5\n1.25\n0.25\n\n\n0.5\n2.5\n1.25\n0.25\n\n\n1.5\n12.5\n18.75\n2.25\n\n\n\nSum\n40\n5\n\n\n\n\\(\\hat\\beta_2 = 40/5 = 8\\) and \\(\\hat\\beta_1 = 62.5 - 8 \\times 2.5 = 42.5\\), so \\(\\hat Y = 42.5 + 8X\\).\nEach additional hour of study is associated with an 8-point higher average exam score.",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.6 Summary and exercise"
+    ]
+  },
+  {
+    "objectID": "en/book/ch01/6-summary.html#references",
+    "href": "en/book/ch01/6-summary.html#references",
+    "title": "1.6 Summary and exercise",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "English",
+      "Chapter 1. Regression and OLS",
+      "1.6 Summary and exercise"
+    ]
+  },
+  {
+    "objectID": "en/book/index.html",
+    "href": "en/book/index.html",
+    "title": "About this textbook",
+    "section": "",
+    "text": "This textbook is written for students who are new to econometrics (an introductory first course). Readers need only basic statistics: means, variances, and summation notation \\(\\sum\\).",
+    "crumbs": [
+      "English",
+      "About this textbook"
+    ]
+  },
+  {
+    "objectID": "en/book/index.html#who-it-is-for",
+    "href": "en/book/index.html#who-it-is-for",
+    "title": "About this textbook",
+    "section": "",
+    "text": "This textbook is written for students who are new to econometrics (an introductory first course). Readers need only basic statistics: means, variances, and summation notation \\(\\sum\\).",
+    "crumbs": [
+      "English",
+      "About this textbook"
+    ]
+  },
+  {
+    "objectID": "en/book/index.html#using-the-figures",
+    "href": "en/book/index.html#using-the-figures",
+    "title": "About this textbook",
+    "section": "Using the figures",
+    "text": "Using the figures\nEach page contains interactive figures in framed boxes: move the sliders, press the buttons, or click points on a chart. The figures work on computers and phones and follow light or dark mode.",
+    "crumbs": [
+      "English",
+      "About this textbook"
+    ]
+  },
+  {
+    "objectID": "en/book/index.html#print-and-pdf-versions",
+    "href": "en/book/index.html#print-and-pdf-versions",
+    "title": "About this textbook",
+    "section": "Print and PDF versions",
+    "text": "Print and PDF versions\nEvery interactive figure has a static counterpart that appears when the page is printed or saved as PDF, with a key message and a link (plus a QR code once the site is published) back to the interactive version. Use the Show print view (PDF) button to preview it, then your browser’s print menu and Save as PDF (preferably in light mode).",
+    "crumbs": [
+      "English",
+      "About this textbook"
+    ]
+  },
+  {
+    "objectID": "en/book/index.html#notation-and-terms",
+    "href": "en/book/index.html#notation-and-terms",
+    "title": "About this textbook",
+    "section": "Notation and terms",
+    "text": "Notation and terms\n\n\n\n\n\n\n\n\nNotation\nMeaning\nIndonesian term\n\n\n\n\n\\(Y\\), \\(X\\)\ndependent and independent variable\nvariabel dependen, independen\n\n\n\\(\\beta_1\\), \\(\\beta_2\\)\npopulation intercept and slope\nintersep, kemiringan\n\n\n\\(\\hat\\beta_1\\), \\(\\hat\\beta_2\\)\nsample estimates\ntaksiran\n\n\n\\(u_i\\)\nerror term, disturbance\ngalat\n\n\n\\(\\hat u_i\\)\nresidual\nresidual\n\n\n\\(E(Y \\mid X)\\)\nconditional mean\nrata-rata bersyarat\n\n\nSSR\nsum of squared residuals\njumlah kuadrat residual\n\n\n\nDecimals use a point (0.957). Notation follows Gujarati and Porter (2009). Monetary values are in millions of Indonesian rupiah (IDR).",
+    "crumbs": [
+      "English",
+      "About this textbook"
+    ]
+  },
+  {
+    "objectID": "en/book/index.html#chapters",
+    "href": "en/book/index.html#chapters",
+    "title": "About this textbook",
+    "section": "Chapters",
+    "text": "Chapters\n\nTwo-variable regression and OLS",
+    "crumbs": [
+      "English",
+      "About this textbook"
+    ]
+  }
+]

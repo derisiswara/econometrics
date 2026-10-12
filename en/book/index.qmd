@@ -1,0 +1,33 @@
+---
+title: "About this textbook"
+---
+
+## Who it is for
+
+This textbook is written for students who are new to econometrics (an introductory first course). Readers need only basic statistics: means, variances, and summation notation $\sum$.
+
+## Using the figures
+
+Each page contains interactive figures in framed boxes: move the sliders, press the buttons, or click points on a chart. The figures work on computers and phones and follow light or dark mode.
+
+## Print and PDF versions
+
+Every interactive figure has a static counterpart that appears when the page is printed or saved as PDF, with a **key message** and a link (plus a QR code once the site is published) back to the interactive version. Use the **Show print view (PDF)** button to preview it, then your browser's print menu and *Save as PDF* (preferably in light mode).
+
+## Notation and terms
+
+| Notation | Meaning | Indonesian term |
+|---|---|---|
+| $Y$, $X$ | dependent and independent variable | variabel dependen, independen |
+| $\beta_1$, $\beta_2$ | population intercept and slope | intersep, kemiringan |
+| $\hat\beta_1$, $\hat\beta_2$ | sample estimates | taksiran |
+| $u_i$ | error term, disturbance | galat |
+| $\hat u_i$ | residual | residual |
+| $E(Y \mid X)$ | conditional mean | rata-rata bersyarat |
+| SSR | sum of squared residuals | jumlah kuadrat residual |
+
+Decimals use a point (0.957). Notation follows @gujarati2009. Monetary values are in millions of Indonesian rupiah (IDR).
+
+## Chapters
+
+1. [Two-variable regression and OLS](ch01/index.qmd)

@@ -1,0 +1,74 @@
+---
+title: "1.5 Menghitung OLS"
+---
+
+<script src="../../../assets/vendor/qrcode.js"></script>
+<script src="../../../assets/rv.js"></script>
+<script src="../../../assets/widgets/ch01.js"></script>
+
+<div class="rv-mode"><button type="button" aria-pressed="false">Lihat tampilan cetak (PDF)</button><span>Pratinjau tampilan ilustrasi saat dicetak atau disimpan sebagai PDF.</span></div>
+
+## Dari kurva SSR ke rumus
+
+Setiap pilihan kemiringan menghasilkan SSR yang berbeda; jika semuanya digambar, terbentuk **kurva berbentuk U**. Garis OLS berada di **dasar kurva**, tempat garis singgungnya **datar** (turunan = 0).
+
+<div class="rv" id="rv-curve">
+<div class="rv-title">Ilustrasi 1.10. Kurva SSR berbentuk U</div>
+<div class="rv-ctrl"><label>Kemiringan β̂₂ <input type="range" id="rv-curve-b2" min="0" max="2" step="0.01" value="0.3"> <strong id="rv-curve-b2v"></strong></label><button class="primary" id="rv-curve-min">Ke dasar kurva</button></div>
+<div class="rv-row">
+<div class="rv-half"><svg class="rv-svg" viewBox="0 0 300 260" role="img" aria-label="Data dan garis dengan kemiringan pilihan"></svg></div>
+<div class="rv-half"><svg class="rv-svg" viewBox="0 0 300 260" role="img" aria-label="Kurva SSR terhadap kemiringan"></svg></div>
+</div>
+<p class="rv-out"></p>
+</div>
+
+Langkah "turunan sama dengan nol" menghasilkan dua rumus:
+
+$$
+\hat\beta_2 = \frac{\sum x_i y_i}{\sum x_i^2}
+\qquad\qquad
+\hat\beta_1 = \bar Y - \hat\beta_2 \bar X
+$$
+
+dengan $x_i = X_i - \bar X$ dan $y_i = Y_i - \bar Y$ (selisih terhadap rata-rata).
+
+## Contoh perhitungan
+
+Enam keluarga (data contoh, juta rupiah per bulan). Tekan **Berikutnya** untuk mengikuti setiap langkah.
+
+<div class="rv" id="rv-steps">
+<div class="rv-title">Ilustrasi 1.11. Menghitung OLS secara bertahap</div>
+<div class="rv-ctrl"><button id="rv-steps-prev">Sebelumnya</button><button class="primary" id="rv-steps-next">Berikutnya</button><span class="rv-steps" id="rv-steps-n"></span></div>
+<svg class="rv-svg" viewBox="0 0 560 340" role="img" aria-label="Langkah perhitungan OLS"></svg>
+<p class="rv-out"></p>
+</div>
+
+| Keluarga | $X_i$ | $Y_i$ | $x_i$ | $y_i$ | $x_i y_i$ | $x_i^2$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 1 | 2 | 3 | −5 | −4,5 | 22,5 | 25 |
+| 2 | 4 | 4 | −3 | −3,5 | 10,5 | 9 |
+| 3 | 6 | 7 | −1 | −0,5 | 0,5 | 1 |
+| 4 | 8 | 8 | 1 | 0,5 | 0,5 | 1 |
+| 5 | 10 | 11 | 3 | 3,5 | 10,5 | 9 |
+| 6 | 12 | 12 | 5 | 4,5 | 22,5 | 25 |
+| **Jumlah** | **42** | **45** | | | **67** | **70** |
+
+$$
+\hat\beta_2 = \frac{67}{70} \approx 0{,}957
+\qquad
+\hat\beta_1 = 7{,}5 - 0{,}957 \times 7 = 0{,}8
+\qquad
+\hat Y = 0{,}8 + 0{,}957X
+$$
+
+## Membaca hasilnya
+
+- **Kemiringan 0,957**: setiap kenaikan pendapatan 1 juta rupiah berhubungan dengan kenaikan konsumsi rata-rata sekitar 0,957 juta rupiah (kecenderungan mengonsumsi marginal, MPC).
+- **Intersep 0,8**: perkiraan konsumsi saat pendapatan nol; tafsirkan dengan hati-hati karena tidak ada data berpendapatan nol.
+
+<div class="rv" id="rv-pred">
+<div class="rv-title">Ilustrasi 1.12. Prediksi dengan garis taksiran</div>
+<div class="rv-ctrl"><label>Pendapatan X <input type="range" id="rv-pred-x" min="0" max="16" step="0.5" value="9"> <strong id="rv-pred-xv"></strong></label></div>
+<svg class="rv-svg" viewBox="0 0 560 330" role="img" aria-label="Prediksi konsumsi dari garis taksiran"></svg>
+<p class="rv-out"></p>
+</div>

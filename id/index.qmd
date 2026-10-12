@@ -1,0 +1,21 @@
+---
+title: "Belajar Ekonometrika"
+subtitle: "Buku teks interaktif untuk belajar dan mengajar"
+toc: false
+---
+
+Buku teks interaktif ini merupakan bacaan mandiri dengan ilustrasi yang dapat dicoba langsung di peramban, termasuk di ponsel. Setiap bab dipecah menjadi beberapa halaman pendek.
+
+[Buka buku teks →](book/index.qmd)
+
+## Daftar materi
+
+| Bab | Topik | Status |
+|:-:|---|:-:|
+| 1 | [Regresi dua variabel dan OLS](book/ch01/index.qmd) | Tersedia |
+| 2 | Asumsi model regresi linear klasik dan sifat estimator OLS | Rencana |
+| 3 | Koefisien determinasi ($R^2$) | Rencana |
+| 4 | Inferensi: galat baku, selang kepercayaan, dan uji t | Rencana |
+| 5 | Regresi linear berganda | Rencana |
+
+*Read this site in English: use the **English** button at the top.*

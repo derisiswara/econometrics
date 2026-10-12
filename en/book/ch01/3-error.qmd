@@ -1,0 +1,44 @@
+---
+title: "1.3 Errors, population, and sample"
+---
+
+<script src="../../../assets/vendor/qrcode.js"></script>
+<script src="../../../assets/rv.js"></script>
+<script src="../../../assets/widgets/ch01.js"></script>
+
+<div class="rv-mode"><button type="button" aria-pressed="false">Show print view (PDF)</button><span>Preview how the figures look when the page is printed or saved as PDF.</span></div>
+
+## The error term
+
+Each point lies some distance from the line. The regression model writes this distance as the **error term**, $u_i$:
+
+$$
+Y_i = \underbrace{\beta_1 + \beta_2 X_i}_{\text{value on the line}} + \underbrace{u_i}_{\text{error}}
+$$
+
+The error collects every factor other than X that also affects Y, such as household size or habits.
+
+<div class="rv" id="rv-err">
+<div class="rv-title">Figure 1.6. Click a point to see its error</div>
+<svg class="rv-svg" viewBox="0 0 560 320" role="img" aria-label="The error as the vertical distance from a point to the line"></svg>
+<p class="rv-out"></p>
+</div>
+
+## Population and sample
+
+The true line applies to the **whole population** and is unknown. From a **sample** we can only **estimate** it. Estimates carry a hat ( ^ ).
+
+| Population (unknown) | Sample (computed from data) |
+|---|---|
+| $\beta_1, \beta_2$ | $\hat\beta_1, \hat\beta_2$ (estimates) |
+| true line | estimated line $\hat Y_i = \hat\beta_1 + \hat\beta_2 X_i$ |
+| error $u_i$ | **residual** $\hat u_i = Y_i - \hat Y_i$ |
+
+<div class="rv" id="rv-sample">
+<div class="rv-title">Figure 1.7. One population, many samples, many estimated lines</div>
+<div class="rv-ctrl"><button class="primary" id="rv-sample-1">Draw 1 sample</button><button id="rv-sample-20">Draw 20 samples</button><button id="rv-sample-0">Start over</button></div>
+<svg class="rv-svg" viewBox="0 0 560 330" role="img" aria-label="Population line and estimated lines from random samples"></svg>
+<p class="rv-out"></p>
+</div>
+
+The estimated lines scatter **around** the population line. The question is: from a single sample, how do we draw the best estimated line?

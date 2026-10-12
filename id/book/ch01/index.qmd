@@ -1,0 +1,32 @@
+---
+title: "Bab 1. Regresi Dua Variabel dan OLS"
+subtitle: "Dari garis lurus hingga estimasi kuadrat terkecil"
+---
+
+::: {.callout-tip}
+## Tujuan belajar
+Setelah mempelajari bab ini, mahasiswa diharapkan mampu:
+
+1. menjelaskan apa yang dikerjakan oleh analisis regresi;
+2. membaca arti intersep dan kemiringan pada sebuah garis regresi;
+3. menjelaskan gagasan OLS, yaitu memilih garis dengan kesalahan kuadrat terkecil;
+4. menghitung koefisien regresi sederhana secara manual.
+:::
+
+## Peta bab
+
+Bab ini dibagi menjadi enam halaman pendek. Setiap halaman memuat satu gagasan dan satu sampai tiga ilustrasi.
+
+| Halaman | Isi |
+|---|---|
+| [1.1 Apa itu regresi?](1-regression.qmd) | Diagram pencar, pola hubungan, hubungan dan sebab-akibat |
+| [1.2 Garis regresi](2-line.qmd) | Intersep, kemiringan, dan rata-rata bersyarat |
+| [1.3 Galat, populasi, dan sampel](3-error.qmd) | Mengapa data tidak tepat di garis; taksiran dari sampel |
+| [1.4 Gagasan OLS](4-ols-idea.qmd) | Residual dan aturan kuadrat terkecil |
+| [1.5 Menghitung OLS](5-ols-compute.qmd) | Rumus, contoh hitung, dan prediksi |
+| [1.6 Ringkasan dan latihan](6-summary.qmd) | Rangkuman dan soal latihan |
+
+::: {.callout-note}
+## Sumber dan data
+Bab ini menyederhanakan bagian awal buku teks ekonometrika standar, terutama @gujarati2009 (Bab 1 sampai 3), dengan @wooldridge2020 (Bab 2) sebagai pembanding. Isinya merupakan parafrase, bukan kutipan langsung; nomor bab perlu dicocokkan dengan edisi yang digunakan. Semua angka adalah data contoh (hipotetis).
+:::

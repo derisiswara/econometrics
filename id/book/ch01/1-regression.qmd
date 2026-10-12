@@ -1,0 +1,64 @@
+---
+title: "1.1 Apa itu regresi?"
+---
+
+<script src="../../../assets/vendor/qrcode.js"></script>
+<script src="../../../assets/rv.js"></script>
+<script src="../../../assets/widgets/ch01.js"></script>
+
+<div class="rv-mode"><button type="button" aria-pressed="false">Lihat tampilan cetak (PDF)</button><span>Pratinjau tampilan ilustrasi saat dicetak atau disimpan sebagai PDF.</span></div>
+
+Perhatikan pertanyaan berikut: *jika pendapatan sebuah keluarga naik, berapa besar kenaikan konsumsinya?*
+
+Untuk menjawabnya, kita mengumpulkan data dari banyak keluarga, lalu menggambarkannya dalam **diagram pencar** (*scatter plot*). Setiap titik mewakili satu keluarga.
+
+<div class="rv" id="rv-scatter">
+<div class="rv-title">Ilustrasi 1.1. Dari kumpulan titik ke sebuah garis</div>
+<div class="rv-ctrl"><button class="primary" id="rv-scatter-btn">Tampilkan garis yang merangkum pola</button></div>
+<svg class="rv-svg" viewBox="0 0 560 320" role="img" aria-label="Diagram pencar pendapatan dan konsumsi 20 keluarga"></svg>
+<p class="rv-out"></p>
+</div>
+
+**Regresi mempelajari bagaimana nilai rata-rata suatu variabel (Y) berubah ketika variabel lain (X) berubah.** Hasilnya dirangkum dalam sebuah garis.
+
+| Simbol | Nama | Dalam contoh |
+|:-:|---|---|
+| Y | variabel **dependen** (yang dijelaskan) | konsumsi |
+| X | variabel **independen** (yang menjelaskan) | pendapatan |
+
+## Tiga pola hubungan
+
+<div class="rv" id="rv-pattern">
+<div class="rv-title">Ilustrasi 1.2. Positif, negatif, dan tanpa hubungan</div>
+<div class="rv-row">
+<figure><svg class="rv-svg" viewBox="0 0 200 170" role="img" aria-label="Hubungan positif"></svg><figcaption><b>Positif</b><br>X naik, Y cenderung naik</figcaption></figure>
+<figure><svg class="rv-svg" viewBox="0 0 200 170" role="img" aria-label="Hubungan negatif"></svg><figcaption><b>Negatif</b><br>X naik, Y cenderung turun</figcaption></figure>
+<figure><svg class="rv-svg" viewBox="0 0 200 170" role="img" aria-label="Tidak ada hubungan"></svg><figcaption><b>Tidak ada hubungan</b><br>garis hampir datar</figcaption></figure>
+</div>
+<p class="rv-out">Contoh: pendapatan dan konsumsi (positif); harga dan jumlah barang yang diminta (negatif); nomor sepatu dan nilai ujian (tidak ada hubungan).</p>
+</div>
+
+## Hubungan belum tentu sebab-akibat
+
+Penjualan es krim dan kasus tenggelam sama-sama naik pada musim panas. Keduanya berhubungan, tetapi es krim tidak menyebabkan orang tenggelam; keduanya dipengaruhi faktor ketiga, yaitu cuaca panas.
+
+<div class="rv" id="rv-causal">
+<div class="rv-title">Ilustrasi 1.3. Faktor ketiga yang tersembunyi</div>
+<svg class="rv-svg" viewBox="0 0 560 230" role="img" aria-label="Diagram: cuaca panas memengaruhi penjualan es krim dan kasus tenggelam">
+<defs><marker id="rv-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="rv-head"/></marker></defs>
+<rect x="200" y="14" width="160" height="50" rx="8" class="rv-box"/>
+<text x="280" y="44" text-anchor="middle" class="rv-t">Cuaca panas</text>
+<rect x="30" y="160" width="170" height="50" rx="8" class="rv-box"/>
+<text x="115" y="190" text-anchor="middle" class="rv-t">Penjualan es krim</text>
+<rect x="360" y="160" width="170" height="50" rx="8" class="rv-box"/>
+<text x="445" y="190" text-anchor="middle" class="rv-t">Kasus tenggelam</text>
+<path d="M240 66 L140 156" class="rv-arrow" marker-end="url(#rv-ah)"/>
+<path d="M320 66 L420 156" class="rv-arrow" marker-end="url(#rv-ah)"/>
+<text x="160" y="106" text-anchor="end" class="rv-ts">memengaruhi</text>
+<text x="400" y="106" class="rv-ts">memengaruhi</text>
+<path d="M204 185 L356 185" class="rv-arrow-d"/>
+<text x="280" y="176" text-anchor="middle" class="rv-note">berhubungan,</text>
+<text x="280" y="204" text-anchor="middle" class="rv-note">bukan sebab-akibat</text>
+</svg>
+<p class="rv-out">Regresi menunjukkan <b>hubungan</b>. Klaim sebab-akibat memerlukan dasar teori dan desain penelitian yang tepat.</p>
+</div>

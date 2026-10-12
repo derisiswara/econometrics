@@ -1,0 +1,74 @@
+---
+title: "1.5 Computing OLS"
+---
+
+<script src="../../../assets/vendor/qrcode.js"></script>
+<script src="../../../assets/rv.js"></script>
+<script src="../../../assets/widgets/ch01.js"></script>
+
+<div class="rv-mode"><button type="button" aria-pressed="false">Show print view (PDF)</button><span>Preview how the figures look when the page is printed or saved as PDF.</span></div>
+
+## From the SSR curve to the formula
+
+Every choice of slope gives a different SSR; drawn together they form a **U-shaped curve**. The OLS line sits at the **bottom of the curve**, where the tangent is **flat** (derivative = 0).
+
+<div class="rv" id="rv-curve">
+<div class="rv-title">Figure 1.10. The U-shaped SSR curve</div>
+<div class="rv-ctrl"><label>Slope β̂₂ <input type="range" id="rv-curve-b2" min="0" max="2" step="0.01" value="0.3"> <strong id="rv-curve-b2v"></strong></label><button class="primary" id="rv-curve-min">Go to the bottom</button></div>
+<div class="rv-row">
+<div class="rv-half"><svg class="rv-svg" viewBox="0 0 300 260" role="img" aria-label="Data and a line with the chosen slope"></svg></div>
+<div class="rv-half"><svg class="rv-svg" viewBox="0 0 300 260" role="img" aria-label="SSR curve against the slope"></svg></div>
+</div>
+<p class="rv-out"></p>
+</div>
+
+Setting the derivative to zero gives two formulas:
+
+$$
+\hat\beta_2 = \frac{\sum x_i y_i}{\sum x_i^2}
+\qquad\qquad
+\hat\beta_1 = \bar Y - \hat\beta_2 \bar X
+$$
+
+where $x_i = X_i - \bar X$ and $y_i = Y_i - \bar Y$ (deviations from the means).
+
+## Worked example
+
+Six households (illustrative data, IDR million per month). Press **Next** to follow each step.
+
+<div class="rv" id="rv-steps">
+<div class="rv-title">Figure 1.11. Computing OLS step by step</div>
+<div class="rv-ctrl"><button id="rv-steps-prev">Previous</button><button class="primary" id="rv-steps-next">Next</button><span class="rv-steps" id="rv-steps-n"></span></div>
+<svg class="rv-svg" viewBox="0 0 560 340" role="img" aria-label="Steps of the OLS computation"></svg>
+<p class="rv-out"></p>
+</div>
+
+| Household | $X_i$ | $Y_i$ | $x_i$ | $y_i$ | $x_i y_i$ | $x_i^2$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 1 | 2 | 3 | −5 | −4.5 | 22.5 | 25 |
+| 2 | 4 | 4 | −3 | −3.5 | 10.5 | 9 |
+| 3 | 6 | 7 | −1 | −0.5 | 0.5 | 1 |
+| 4 | 8 | 8 | 1 | 0.5 | 0.5 | 1 |
+| 5 | 10 | 11 | 3 | 3.5 | 10.5 | 9 |
+| 6 | 12 | 12 | 5 | 4.5 | 22.5 | 25 |
+| **Sum** | **42** | **45** | | | **67** | **70** |
+
+$$
+\hat\beta_2 = \frac{67}{70} \approx 0.957
+\qquad
+\hat\beta_1 = 7.5 - 0.957 \times 7 = 0.8
+\qquad
+\hat Y = 0.8 + 0.957X
+$$
+
+## Reading the result
+
+- **Slope 0.957**: each additional IDR 1 million of income is associated with about IDR 0.957 million more average consumption (the marginal propensity to consume, MPC).
+- **Intercept 0.8**: predicted consumption at zero income; interpret with care, since no household in the data has zero income.
+
+<div class="rv" id="rv-pred">
+<div class="rv-title">Figure 1.12. Predicting with the estimated line</div>
+<div class="rv-ctrl"><label>Income X <input type="range" id="rv-pred-x" min="0" max="16" step="0.5" value="9"> <strong id="rv-pred-xv"></strong></label></div>
+<svg class="rv-svg" viewBox="0 0 560 330" role="img" aria-label="Predicted consumption from the estimated line"></svg>
+<p class="rv-out"></p>
+</div>

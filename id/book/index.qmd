@@ -1,0 +1,33 @@
+---
+title: "Pengantar Buku Teks"
+---
+
+## Untuk siapa buku ini
+
+Buku teks ini ditujukan bagi mahasiswa yang baru mengenal ekonometrika (setara Ekonometrika 1). Pembaca cukup memahami statistika dasar: rata-rata, varians, dan notasi penjumlahan $\sum$.
+
+## Cara memakai ilustrasi
+
+Setiap halaman memuat ilustrasi interaktif dalam kotak bertepi: geser *slider*, tekan tombol, atau klik titik pada grafik. Ilustrasi berjalan di komputer maupun ponsel dan mengikuti mode terang atau gelap.
+
+## Versi cetak dan PDF
+
+Setiap ilustrasi interaktif memiliki versi statis yang tampil saat halaman dicetak atau disimpan sebagai PDF, lengkap dengan **pesan inti** dan tautan (serta kode QR bila situs sudah terbit) ke versi interaktifnya. Gunakan tombol **Lihat tampilan cetak (PDF)** untuk pratinjau, lalu menu cetak peramban dan *Simpan sebagai PDF* (sebaiknya dalam mode terang).
+
+## Notasi dan istilah
+
+| Notasi | Arti | Istilah Inggris |
+|---|---|---|
+| $Y$, $X$ | variabel dependen dan independen | dependent and independent variable |
+| $\beta_1$, $\beta_2$ | intersep dan kemiringan populasi | intercept, slope |
+| $\hat\beta_1$, $\hat\beta_2$ | taksiran dari sampel | estimates |
+| $u_i$ | galat | error term, disturbance |
+| $\hat u_i$ | residual | residual |
+| $E(Y \mid X)$ | rata-rata bersyarat | conditional mean |
+| SSR | jumlah kuadrat residual | sum of squared residuals |
+
+Angka desimal ditulis dengan koma (0,957). Notasi mengikuti @gujarati2009.
+
+## Daftar bab
+
+1. [Regresi dua variabel dan OLS](ch01/index.qmd)

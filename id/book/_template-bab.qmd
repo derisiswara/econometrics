@@ -1,0 +1,76 @@
+---
+title: "Bab N. Judul Bab"
+subtitle: "Satu kalimat yang merangkum isi bab"
+description: "Deskripsi singkat untuk mesin pencari dan kartu pratinjau."
+---
+
+<!--
+  TEMPLAT BAB
+  1. Salin berkas ini menjadi id/book/chNN/1-nama.qmd (dan padanannya di en/book/chNN/ dengan nama berkas yang sama).
+  2. Tambahkan berkas baru ke bagian sidebar di _quarto.yml.
+  3. Perbarui tabel "Daftar materi" di id/index.qmd dan en/index.qmd, serta daftar bab di id/book/index.qmd dan en/book/index.qmd.
+  4. Untuk bab dwibahasa, pindahkan skrip ilustrasi ke assets/widgets/chNN.js (lihat ch01.js) dan
+     tulis teks dengan R.t("Indonesia", "English"), lalu muat berkas itu di kedua versi halaman.
+     Skrip di bawah ini ditulis langsung di halaman hanya sebagai contoh paling sederhana.
+-->
+
+<script src="../../../assets/vendor/qrcode.js"></script>
+<script src="../../../assets/rv.js"></script>
+
+<div class="rv-mode"><button type="button" aria-pressed="false">Lihat tampilan cetak (PDF)</button><span>Pratinjau bagaimana setiap ilustrasi disajikan saat halaman dicetak atau disimpan sebagai PDF.</span></div>
+
+::: {.callout-tip}
+## Tujuan belajar
+Setelah mempelajari bab ini, mahasiswa diharapkan mampu:
+
+1. ...
+2. ...
+:::
+
+## 1. Subjudul pertama
+
+Teks penjelasan. Rumus ditulis dengan LaTeX, misalnya $\hat\beta_2 = \sum x_i y_i / \sum x_i^2$.
+
+<!-- Contoh ilustrasi: id unik per ilustrasi, diawali "rv-" -->
+<div class="rv" id="rv-contoh">
+<div class="rv-title">Ilustrasi N.1. Judul ilustrasi</div>
+<div class="rv-ctrl"><label>Kemiringan <input type="range" id="rv-contoh-b2" min="0" max="2" step="0.1" value="1"> <strong id="rv-contoh-b2v"></strong></label></div>
+<svg class="rv-svg" viewBox="0 0 560 320" role="img" aria-label="Deskripsi gambar untuk pembaca layar"></svg>
+<p class="rv-out"></p>
+</div>
+
+<script>
+(function(){
+  var R=window.RV,root=document.getElementById("rv-contoh");if(!R||!root)return;
+  var svg=root.querySelector("svg"),out=root.querySelector(".rv-out"),sl=document.getElementById("rv-contoh-b2");
+  // 1. Fungsi gambar: dipakai bersama oleh tampilan layar dan versi cetak
+  function paint(s,b2){
+    var f=R.frame(s,{x0:0,x1:10,y0:0,y1:20,dx:2,dy:5,xl:"X",yl:"Y"});
+    R.line(f,1,b2,0,10,"rv-line");
+  }
+  // 2. Interaksi di layar
+  function draw(){
+    var b2=+sl.value;paint(svg,b2);
+    document.getElementById("rv-contoh-b2v").textContent=R.fmt(b2,1);
+    out.innerHTML="Y = 1 + "+R.fmt(b2,1)+"X";
+  }
+  sl.addEventListener("input",draw);draw();
+  // 3. Versi cetak: slider diterjemahkan menjadi panel berjajar
+  R.print(root,[0.5,1,1.5].map(function(b){return{paint:function(s){paint(s,b);},caption:"Y = 1 + "+R.fmt(b,1)+"X"};}),
+    {cols:3,viewBox:"0 0 300 240",note:"<b>Pesan inti:</b> tulis satu kalimat yang harus dipahami pembaca dari ilustrasi ini."});
+})();
+</script>
+
+## Latihan
+
+**Soal.** ...
+
+::: {.callout-tip collapse="true"}
+## Lihat jawaban
+...
+:::
+
+## Referensi {.unnumbered}
+
+::: {#refs}
+:::

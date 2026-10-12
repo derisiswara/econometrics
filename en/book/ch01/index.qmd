@@ -1,0 +1,32 @@
+---
+title: "Chapter 1. Two-Variable Regression and OLS"
+subtitle: "From a straight line to least-squares estimation"
+---
+
+::: {.callout-tip}
+## Learning objectives
+After working through this chapter, students should be able to:
+
+1. explain what regression analysis does;
+2. interpret the intercept and slope of a regression line;
+3. explain the idea of OLS, that is, choosing the line with the smallest sum of squared errors;
+4. compute simple regression coefficients by hand.
+:::
+
+## Chapter map
+
+This chapter is split into six short pages. Each page carries one idea and one to three figures.
+
+| Page | Contents |
+|---|---|
+| [1.1 What is regression?](1-regression.qmd) | Scatter plots, patterns, association and causation |
+| [1.2 The regression line](2-line.qmd) | Intercept, slope, and the conditional mean |
+| [1.3 Errors, population, and sample](3-error.qmd) | Why data do not lie on the line; estimates from a sample |
+| [1.4 The idea of OLS](4-ols-idea.qmd) | Residuals and the least-squares rule |
+| [1.5 Computing OLS](5-ols-compute.qmd) | Formulas, a worked example, and prediction |
+| [1.6 Summary and exercise](6-summary.qmd) | Key points and a practice problem |
+
+::: {.callout-note}
+## Sources and data
+This chapter simplifies the opening chapters of standard econometrics textbooks, mainly @gujarati2009 (Chapters 1 to 3), with @wooldridge2020 (Chapter 2) for comparison. The text is a paraphrase, not a direct quotation; chapter numbers should be checked against the edition in use. All numbers are illustrative (hypothetical) data, expressed in millions of Indonesian rupiah (IDR).
+:::

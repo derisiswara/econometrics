@@ -1,0 +1,36 @@
+---
+title: "1.2 Garis regresi"
+---
+
+<script src="../../../assets/vendor/qrcode.js"></script>
+<script src="../../../assets/rv.js"></script>
+<script src="../../../assets/widgets/ch01.js"></script>
+
+<div class="rv-mode"><button type="button" aria-pressed="false">Lihat tampilan cetak (PDF)</button><span>Pratinjau tampilan ilustrasi saat dicetak atau disimpan sebagai PDF.</span></div>
+
+Hubungan antara X dan Y digambarkan dengan sebuah garis lurus:
+
+$$
+Y = \beta_1 + \beta_2 X
+$$
+
+- $\beta_1$ (**intersep**): nilai Y ketika X = 0, yaitu titik potong garis dengan sumbu Y.
+- $\beta_2$ (**kemiringan** atau *slope*): perubahan Y ketika X naik **satu satuan**.
+
+<div class="rv" id="rv-line">
+<div class="rv-title">Ilustrasi 1.4. Membaca intersep dan kemiringan</div>
+<div class="rv-ctrl"><label>Intersep β₁ <input type="range" id="rv-line-b1" min="0" max="12" step="0.5" value="1"> <strong id="rv-line-b1v"></strong></label><label>Kemiringan β₂ <input type="range" id="rv-line-b2" min="-1" max="1.5" step="0.1" value="0.6"> <strong id="rv-line-b2v"></strong></label></div>
+<svg class="rv-svg" viewBox="0 0 560 320" role="img" aria-label="Garis dengan intersep dan kemiringan yang dapat diubah"></svg>
+<p class="rv-out" id="rv-line-out"></p>
+</div>
+
+## Garis yang menghubungkan rata-rata
+
+Keluarga dengan pendapatan yang sama dapat memiliki konsumsi yang berbeda. Garis regresi **tidak melewati setiap titik**; garis itu melewati **rata-rata Y pada setiap nilai X**, yang disebut **rata-rata bersyarat** dan ditulis $E(Y \mid X)$.
+
+<div class="rv" id="rv-cond">
+<div class="rv-title">Ilustrasi 1.5. Sebaran Y pada setiap X dan garis rata-ratanya</div>
+<div class="rv-ctrl"><button id="rv-cond-pt" class="on">Titik data</button><button id="rv-cond-bell">Kurva distribusi</button><button id="rv-cond-both">Keduanya</button><label><input type="checkbox" id="rv-cond-mean" checked> Rata-rata dan garis regresi</label></div>
+<svg class="rv-svg" viewBox="0 0 560 330" role="img" aria-label="Distribusi bersyarat konsumsi pada setiap tingkat pendapatan"></svg>
+<p class="rv-out"></p>
+</div>

@@ -1,0 +1,15 @@
+<script>
+/* Tombol bahasa: arahkan "Bahasa Indonesia"/"English" ke halaman padanan (id/... <-> en/...). */
+(function () {
+  var p = location.pathname, m = p.match(/\/(id|en)\//);
+  if (!m) return;
+  var i = p.lastIndexOf("/" + m[1] + "/");
+  var links = document.querySelectorAll("a.nav-link");
+  for (var k = 0; k < links.length; k++) {
+    var a = links[k], h = a.getAttribute("href") || "", r = /(?:^|\/)(id|en)\/index\.html$/.exec(h);
+    if (!r) continue;
+    if (r[1] === m[1]) { a.classList.add("active"); a.setAttribute("aria-current", "page"); continue; }
+    a.setAttribute("href", p.slice(0, i) + "/" + r[1] + "/" + p.slice(i + 4) + location.hash);
+  }
+})();
+</script>

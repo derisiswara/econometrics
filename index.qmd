@@ -1,0 +1,24 @@
+---
+title: "Belajar Ekonometrika · Learning Econometrics"
+toc: false
+---
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+### Bahasa Indonesia
+
+Buku teks interaktif untuk belajar dan mengajar ekonometrika.
+
+[Masuk →](id/index.qmd){.btn .btn-primary}
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### English
+
+An interactive textbook for learning and teaching econometrics.
+
+[Enter →](en/index.qmd){.btn .btn-primary}
+:::
+
+:::

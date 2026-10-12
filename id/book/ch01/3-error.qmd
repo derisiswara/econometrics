@@ -1,0 +1,44 @@
+---
+title: "1.3 Galat, populasi, dan sampel"
+---
+
+<script src="../../../assets/vendor/qrcode.js"></script>
+<script src="../../../assets/rv.js"></script>
+<script src="../../../assets/widgets/ch01.js"></script>
+
+<div class="rv-mode"><button type="button" aria-pressed="false">Lihat tampilan cetak (PDF)</button><span>Pratinjau tampilan ilustrasi saat dicetak atau disimpan sebagai PDF.</span></div>
+
+## Galat
+
+Setiap titik memiliki jarak terhadap garis. Model regresi menuliskan jarak ini sebagai **galat** (*error term*), $u_i$:
+
+$$
+Y_i = \underbrace{\beta_1 + \beta_2 X_i}_{\text{nilai pada garis}} + \underbrace{u_i}_{\text{galat}}
+$$
+
+Galat menampung semua faktor lain di luar X yang ikut memengaruhi Y, misalnya jumlah anggota keluarga atau kebiasaan.
+
+<div class="rv" id="rv-err">
+<div class="rv-title">Ilustrasi 1.6. Klik salah satu titik untuk melihat galatnya</div>
+<svg class="rv-svg" viewBox="0 0 560 320" role="img" aria-label="Galat sebagai jarak vertikal titik terhadap garis"></svg>
+<p class="rv-out"></p>
+</div>
+
+## Populasi dan sampel
+
+Garis yang sebenarnya berlaku untuk **seluruh populasi** dan tidak kita ketahui. Dari **sampel**, kita hanya dapat **menaksirnya**. Hasil taksiran diberi tanda topi ( ^ ).
+
+| Populasi (tidak diketahui) | Sampel (dihitung dari data) |
+|---|---|
+| $\beta_1, \beta_2$ | $\hat\beta_1, \hat\beta_2$ (taksiran) |
+| garis sebenarnya | garis taksiran $\hat Y_i = \hat\beta_1 + \hat\beta_2 X_i$ |
+| galat $u_i$ | **residual** $\hat u_i = Y_i - \hat Y_i$ |
+
+<div class="rv" id="rv-sample">
+<div class="rv-title">Ilustrasi 1.7. Satu populasi, banyak sampel, banyak garis taksiran</div>
+<div class="rv-ctrl"><button class="primary" id="rv-sample-1">Ambil 1 sampel</button><button id="rv-sample-20">Ambil 20 sampel</button><button id="rv-sample-0">Ulangi</button></div>
+<svg class="rv-svg" viewBox="0 0 560 330" role="img" aria-label="Garis populasi dan garis-garis taksiran dari sampel acak"></svg>
+<p class="rv-out"></p>
+</div>
+
+Garis-garis taksiran menyebar **di sekitar** garis populasi. Pertanyaannya: dari satu sampel, bagaimana menarik garis taksiran yang terbaik?
